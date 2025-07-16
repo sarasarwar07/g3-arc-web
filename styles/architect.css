@@ -7,3 +7,71 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
+/* shared styles */
+.display-flex{
+    display: flex;
+}
+.bg-secondery{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.dark-1{
+    color: #131313;
+}
+.dark-2{
+    color: #424242;
+}
+.dark-3{
+    color: #727272;
+}
+.btn-primary{
+    background-color: #FF900E;
+    color: white;
+    border-radius: 8px;
+    padding: 20px 25px;
+    font-weight: 600;
+    font-size: 1.25rem;
+    border: none;
+    margin-top: 32px;
+}
+/* header styles */
+
+/* navbar related style */
+.nav-items{
+    list-style: none;
+    margin-right: 30px;
+}
+.brand{
+    font-weight: 700;
+    font-size: 3rem;
+}
+.nav-link{
+    text-decoration: none;
+}
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* banner style */
+.banner-contant{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title{
+    font-weight: bold;
+    font-size: 4rem;
+}
+.banner-img{
+    width: 100%;
+}
+/* responsive media quary */
+@media screen and (max-width: 576px) {
+    .navbar, .nav-links{
+        flex-direction: column;
+    }
+}
