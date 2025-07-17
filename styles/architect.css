@@ -35,7 +35,7 @@
     font-weight: 600;
     font-size: 1.25rem;
     border: none;
-    margin-top: 32px;
+    /* margin-top: 32px; */
 }
 main{
     max-width: 1440px;
@@ -103,6 +103,44 @@ main > section{
     color: #FF900E;
 }
 /* our features style */
+#feature-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+.our-features{
+    gap: 140px;
+}
+.feature-arc img{
+    width: 100%;
+}
+.feature-card{
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+    border-radius: 8px;
+
+}
+
+.feature-card .fcard-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+#experience-year{
+    font-weight: bold;
+    font-size: 4rem;
+}
 /* facts related style */
 .facts-container{
     display: grid;
@@ -133,18 +171,35 @@ main > section{
     font-weight: 600;
     margin-top: 10px;
 }
+/* sponsor style */
+.sponsor-info{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+.sponsor-comps{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.sponsor-comps img{
+    filter: grayscale(100%);
+}
 /* responsive media quary */
 @media screen and (max-width: 576px) {
-    .navbar, .nav-links, .teams{
+    .navbar, .nav-links, .teams, .our-features{
         flex-direction: column;
     }
-    .team-img-container, .facts-container{
+    .team-img-container, .facts-container, .sponsor-comps{
         grid-template-columns: repeat(1, 1fr);
     }
     
-    .facts-container{
+    .facts-container, .sponsor-comps{
         justify-items: center;
         gap: 24px;
+    }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
     }
 
     
@@ -152,15 +207,22 @@ main > section{
 }
 /*for medium devices */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .teams{
+    .teams, .our-features{
         flex-direction: column;
     }
     .facts-container{
         grid-template-columns: repeat(2, 1fr);
     }
-    .facts-container{
+    .facts-container, .sponsor-comps{
         justify-items: center;
         gap: 24px;
+    }
+    .sponsor-comps{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
     }
     
 }
